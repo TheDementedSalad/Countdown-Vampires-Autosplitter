@@ -9,7 +9,7 @@ Has door splits and item splits.
 
 The current release will always be at:
 
-https://github.com/TheDementedSalad/Resident-Evil-Survivor-Autosplitter/releases/latest/download/residentevilsurvivor.wasm
+https://github.com/TheDementedSalad/Countdown-Vampires-Autosplitter/releases/latest/download/countdownvampires.wasm
 
 
 ## Compilation

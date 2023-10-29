@@ -16,13 +16,14 @@ use asr::{
     time_util::frame_count,
     timer::{self, TimerState},
     watcher::Watcher,
-};
+    settings::Gui
+};  
 
 asr::panic_handler!();
 asr::async_main!(stable);
 
 async fn main() {
-    let settings = Settings::register();
+    let mut settings = Settings::register(); 
 
     loop {
         // Hook to the target process
@@ -31,6 +32,8 @@ async fn main() {
         let offsets = Offsets::new();
 
         loop {
+            settings.update();
+
             if !emulator.is_open() {
                 break;
             }
@@ -83,7 +86,7 @@ async fn main() {
     }
 }
 
-#[derive(asr::user_settings::Settings)]
+#[derive(Gui)]
 struct Settings {
     #[default = true]
     /// ---------- Start Conditions Below ----------

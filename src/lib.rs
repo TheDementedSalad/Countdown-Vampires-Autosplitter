@@ -302,12 +302,12 @@ struct Offsets {
 impl Offsets {
     fn new() -> Self {
         Self {
-            gamecode_ntsc: 0x93DC,
-            hp: 0xB3F2E,
-            igt: 0xB3EFC,
-            map_id: 0xB3EF2,
-            item_1: 0xB3F42,
-            ending: 0xB3F28,
+            gamecode_ntsc: 0x800093DC,
+            hp: 0x800B3F2E,
+            igt: 0x800B3EFC,
+            map_id: 0x800B3EF2,
+            item_1: 0x800B3F42,
+            ending: 0x800B3F28,
         }
     }
 }
